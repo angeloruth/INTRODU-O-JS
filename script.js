@@ -1,5 +1,8 @@
-function updateStats() {
-    // Apenas um exemplo simples de atualização de estatísticas
-    document.getElementById('goals').textContent = Math.floor(Math.random() * 30);
-    document.getElementById('assists').textContent = Math.floor(Math.random() * 20);
+const para = document.querySelector("p");
+
+para.addEventListener("click", atualizarNome);
+
+function atualizarNome() {
+  var nome = prompt("Insira um novo nome");
+  para.textContent = "Jogador 1: " + nome;
 }
